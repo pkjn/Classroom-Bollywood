@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'MyAndroidKey'
+            keyPassword 'iamgod0748'
+            storeFile file('F:/Projects/MyKeyStore.jks')
+            storePassword 'iamgod0748'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId 'prateekjain.classroombollywood'
+        minSdkVersion 11
+        targetSdkVersion 19
+        versionName '2.4'
+        signingConfig signingConfigs.config
+        versionCode 6
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.github.traex.rippleeffect:library:1.3'
+}

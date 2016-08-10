@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Classroom Bollywood</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_timer">TimerActivity</string>
+    <string name="app">Circular Counter</string>
+
+    <string-array name="colors">
+        <item>#FF6F00</item>
+        <item>#FFEA00</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+    </string-array>
+    <string name="title_activity_time">TimeActivity</string>
+    <string name="title_activity_guess_the_movie">Guess The Movie</string>
+</resources>
